@@ -12,7 +12,7 @@ spec:
       tty: true
       volumeMounts:
         - name: m2
-          mountPath: /root/.m2/
+          mountPath: /tmp/.m2/
     - name: docker-tools
       image: rmkanda/docker-tools:latest
       command:
