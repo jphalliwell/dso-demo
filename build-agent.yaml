@@ -40,6 +40,16 @@ spec:
           name: docker-sock
         - mountPath: /tmp/trivycache/
           name: trivycache
+    - name: argocd-cli
+      image: schoolofdevops/argocd-cli
+      tty: true
+      command:
+        - cat
+    - name: zap2docker
+      image: owasp/zap2docker-stable
+      tty: true
+      command:
+        - cat
     - name: trufflehog
       image: rmkanda/trufflehog
       command:
